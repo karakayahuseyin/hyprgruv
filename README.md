@@ -1,2 +1,2 @@
 # dotfiles
-My Archlinux + Hprland config files
+My Archlinux + Hprland config files (not ready)

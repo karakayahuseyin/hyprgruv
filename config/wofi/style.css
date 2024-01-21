@@ -1,47 +1,47 @@
 window {
-	font-size: 20;
-    	background: #2a2a2a;
-    	border-radius: 10px;
+	font-size: 22;
+    background: #282828;
+    border-radius: 10px;
 }
 
 #input {
-    	padding: 5px;
-    	margin: 5px;
-    	padding-left: 20px;
-    	border: none;
-    	color: #cecece;
-    	background-color: #1a1a1a;
-    	border-radius: 10px;
-    	margin: 5px;
-    	margin-bottom: 2px;
+    padding: 5px;
+	margin: 5px;
+   	padding-left: 20px;
+	border: none;
+    color: #8ec07c;
+    background-color: #282828;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 2px;
 }
+
 #input:focus {
-    	border: 0px solid #1e1e2e;
-    	margin-bottom: 0px;
+    border: 0px solid #282828;
+	margin-bottom: 0px;
 }
 
 #inner-box {
-    	margin: 5px;
-    	border: 10px;
-    	padding-left: 15px;
+	margin: 5px;
+	border: 10px;
+	padding-left: 15px;
 	padding-right: 15px;
-    	color: #cecece;
-    	background-color: #2a2a2a;
-    	border-radius: 10px;
+	color: #ebdbb2;
+	background-color: #282828;
+	border-radius: 10px;
 }
 
 #outer-box {
-    	margin: 0px;
-    	border-radius: 10px;
-    	background-color: #2a2a2a;
+    margin: 0px;
+	border-radius: 10px;
+	background-color: #282828;
 }
 
 #scroll {
-    	margin-top: 5px;
-    	border: none;
-    	border-radius: 10px;
-    	margin-bottom: 5px;
-    /* background: rgb(255,255,255); */
+    margin-top: 5px;
+	border: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 #entry {
@@ -51,7 +51,7 @@ window {
 
 #entry:selected {
 	border: 10px;
-    	border-radius: 10px;
-    	background: #1a1a1a;
-    	color: #cecece;
+	border-radius: 10px;
+	background: #689d6a;
+	color: #ebdbb2;
 }

@@ -1,110 +1,117 @@
 {
     "layer": "top",
     "position": "top",
+    "spacing": 0,
     "height": 35,
-    "width": 1890,
-    "margin": 10,
-    "spacing": 5,
     "modules-left": [
-      "wlr/workspaces",
-      ],
-    "modules-center": ["hyprland/window"],
+        "custom/logo",
+        "wlr/taskbar"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
     "modules-right": [
-      "tray", 
-      "pulseaudio", 
-      "network", 
-      "cpu", 
-      "memory", 
-      "temperature", 
-      "backlight",  
-      "battery",  
-      "clock", 
-      ],
-
-    "hyprland/window": {
-      "format": "{}"
+        "tray",
+        "memory",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "clock"
+    ],
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "on-click-right": "fullscreen",
+        "icon-theme": "Tela",
+        "icon-size": 20,
+        "tooltip-format": "{title}"
     },
-    "wlr/workspaces": {
-      "disable-scroll": true,
-      "on-click": "activate",
-      "format": "{icon}",
-      "format-icons": {
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [],
-        "5": [],
-        "6": [],
-        "7": [],
-        "8": [],
-        "9": [],
-        "10": []
-      }
-    },
-    "tray": {
-        "spacing": 5
-    },
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false,
-        "on-click": "htop"
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "all-outputs": true,
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "default": "+"
+        }
     },
     "memory": {
-        "format": "{}% ",
-        "on-click": "htop"
+        "interval": 5,
+        "format": "󰍛 {}%",
+        "max-length": 10,
+        "on-click": "kitty --start-as=fullscreen sh -c 'btop'"
     },
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+    "tray": {
+        "spacing": 10
     },
-    "backlight": {
-        "device": "nvidia_wmi_ec",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
     },
     "pulseaudio": {
-        "scroll-step": 2,
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "tooltip-format": "Volume : {volume}%",
+        "format-muted": "󰝟",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "default": ["󰖀","󰕾",""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pamixer -t",
+            "on-click-right": "pavucontrol",
+        "scroll-step": 1
     },
+    "backlight": {
+	    "device": "nvidia_wmi_ec_backlight",
+	    "format": "{percent}% {icon}",
+	    "format-icons": ["", ""]
+    },
+    "custom/logo": {
+        "format": "  ",
+        "tooltip": false,
+        "on-click": "wofi --show drun"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "format-full": "Charged ",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    }
 }

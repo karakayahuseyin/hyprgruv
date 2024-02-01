@@ -11,9 +11,9 @@
 - wallpaper : [hyprpaper](https://github.com/hyprwm/hyprpaper)
 
 ### Hyprland
-'''
+```
 sudo pacman -S hyprland
-'''
+```
 ### 
 
 

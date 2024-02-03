@@ -10,12 +10,17 @@
 - browser : [chromium](https://archlinux.org/packages/extra/x86_64/chromium/)
 - wallpaper : [hyprpaper](https://github.com/hyprwm/hyprpaper)
 
-### Hyprland
+#### Installation
+
+- #### Hyprland
 ```
 sudo pacman -S hyprland
 ```
-### 
 
+- #### Defaults
+```
+yay -S waybar-hyprland mako wofi chromium thunar kitty hyprpaper hyprshot
+```
 
 ### Essentials
 - [cava](https://github.com/karlstav/cava) : audio visualizer

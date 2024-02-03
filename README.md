@@ -10,7 +10,7 @@
 - browser : [chromium](https://archlinux.org/packages/extra/x86_64/chromium/)
 - wallpaper : [hyprpaper](https://github.com/hyprwm/hyprpaper)
 
-#### Installation
+### Installation
 
 - #### Hyprland
 ```

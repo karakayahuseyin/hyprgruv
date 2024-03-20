@@ -2,6 +2,8 @@
 
 ![](view.png)
 
+*You must update monitors in hyprland.conf and wallpaper path in hyprpaper.conf*
+
 ### Defaults
 - terminal : [kitty](https://github.com/kovidgoyal/kitty)
 - file manager : [Thunar](https://archlinux.org/packages/?name=thunar)

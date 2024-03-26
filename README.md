@@ -2,7 +2,9 @@
 
 ![](view.png)
 
-*You must update monitors in hyprland.conf and wallpaper path in hyprpaper.conf*
+
+*IMPORTANT !!!*
+*For use, you must update the monitor configuration in Hyrland.conf and the wallpaper path in hyprpaper.conf.*
 
 ### Defaults
 - terminal : [kitty](https://github.com/kovidgoyal/kitty)
@@ -16,7 +18,7 @@
 
 - #### Hyprland
 ```
-sudo pacman -S hyprland
+pacman -S hyprland
 ```
 
 - #### Defaults
@@ -31,7 +33,7 @@ yay -S waybar-hyprland mako wofi chromium thunar kitty hyprpaper hyprshot
 - [obsidian](https://archlinux.org/packages/extra/x86_64/obsidian/) : knowledge management
 - [hyprshot](https://github.com/Gustash/hyprshot) : screenshot
 - [neofetch](https://github.com/dylanaraps/neofetch) : command line system information
-- [swappy](https://github.com/jtheoof/swappy) : snapshot editing
+- [swappy](https://github.com/jtheoof/swappy) : screenshot editing
 - [btop](https://github.com/aristocratos/btop) : system monitoring
 
 - Icon Theme : [Fluent Dark](https://github.com/vinceliuice/Fluent-gtk-theme)

@@ -26,6 +26,9 @@ pacman -S hyprland
 yay -S waybar-hyprland mako wofi chromium thunar kitty hyprpaper hyprshot
 ```
 
+- #### Terminal Font ####
+**JetBrains Mono Nerd Font**. Install with `pacman -S ttf-jetbrains-mono-nerd`.
+
 ### Essentials
 - [cava](https://github.com/karlstav/cava) : audio visualizer
 - [zathura](https://github.com/pwmt/zathura) : document viewer
@@ -33,7 +36,6 @@ yay -S waybar-hyprland mako wofi chromium thunar kitty hyprpaper hyprshot
 - [obsidian](https://archlinux.org/packages/extra/x86_64/obsidian/) : knowledge management
 - [hyprshot](https://github.com/Gustash/hyprshot) : screenshot
 - [neofetch](https://github.com/dylanaraps/neofetch) : command line system information
-- [swappy](https://github.com/jtheoof/swappy) : screenshot editing
 - [btop](https://github.com/aristocratos/btop) : system monitoring
 
 - Icon Theme : [Fluent Dark](https://github.com/vinceliuice/Fluent-gtk-theme)

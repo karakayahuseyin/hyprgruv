@@ -22,7 +22,7 @@
         "format": "{icon}",
         "on-click": "activate",
         "on-click-right": "fullscreen",
-        "icon-theme": "Tela",
+        "icon-theme": "Fluent",
         "icon-size": 20,
         "tooltip-format": "{title}"
     },

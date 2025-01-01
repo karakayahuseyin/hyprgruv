@@ -4,7 +4,8 @@
 
 
 *IMPORTANT !!!*
-*For use, you must update the monitor configuration in Hyrland.conf and the wallpaper path in hyprpaper.conf.*
+*Maybe outdated*
+*For use, you must update the monitor configuration in Hyrland.conf and hyprpaper.conf.*
 
 ### Defaults
 - terminal : [kitty](https://github.com/kovidgoyal/kitty)
